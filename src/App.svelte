@@ -117,7 +117,7 @@
         <h1>Random Password Generator</h1>
         <p>Create strong and secure passwords to keep your account safe.</p>
         <div class="image">
-            <img src={`/images/${image}.svg`} alt={title} />
+            <img src={`./images/${image}.svg`} alt={title} />
         </div>
         <div class="row">
             <textarea

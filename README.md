@@ -3,7 +3,7 @@
 ---
 
 # Demo
-https://svelte-password-generator.ozhanmengucek.com
+https://svelte.ozhanmengucek.com/random-password-generator/
 
 # svelte app
 

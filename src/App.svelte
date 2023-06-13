@@ -38,10 +38,11 @@
         },
     ];
     let characters = [
-        { type: true, text: "ABC", chars: "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ" },
-        { type: true, text: "abc", chars: "abcçdefgğhıijklmnoöprsştuüvyz" },
+        { type: true, text: "ABC", chars: "ABCDEFGHIJKLMNOPRSTUVYZ" },
+        { type: true, text: "abc", chars: "abcdefghijklmnoprstuvyz" },
         { type: true, text: "123", chars: "0123456789" },
         { type: true, text: "#$&", chars: "!#$%&*+-.?@" },
+        { type: true, text: "şĞö", chars: "ÇĞİÖŞÜçğıöpşü" },
     ];
 
     let count = 15;
@@ -272,7 +273,7 @@
             display: flex;
             flex-wrap: nowrap;
             button {
-                padding: 5px;
+                padding: 0;
                 margin: 0;
                 background: none;
                 border: 0;
@@ -283,7 +284,7 @@
                 font-size: 16px;
                 cursor: pointer;
                 &:not(:last-child) {
-                    margin-right: 15px;
+                    margin-right: 13px;
                 }
                 &.active {
                     &:before {
@@ -298,7 +299,7 @@
                     line-height: 20px;
                     border: 1px solid #ddd;
                     display: block;
-                    margin-right: 8px;
+                    margin-right: 5px;
                     color: $maincolor;
                     background: #fff;
                 }
@@ -350,7 +351,7 @@
                 appearance: none;
                 border-radius: 0;
                 outline: none;
-                width: 205px;
+                width: 220px;
                 height: 15px;
                 margin: 0 15px;
                 background: #ddd;
